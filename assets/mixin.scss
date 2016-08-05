@@ -1,0 +1,10 @@
+$xs-sm-width: 554px;
+$sm-md-width: 768px;
+$md-lg-width: 992px;
+$lg-xl-width: 1200px;
+
+@mixin xs {
+    @media (max-width: #{$xs-sm-width}) {
+        @content;
+    }
+}

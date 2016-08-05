@@ -59,8 +59,8 @@ module.exports = {
     // BrowserSync
     new BrowserSyncPlugin({
       host: 'localhost',
-      port: 3000,
-      proxy: 'localhost:9527',
+      port: 8000,
+      proxy: 'localhost:1337',
       files: ['*.html'] //監聽html檔案
     }),
 

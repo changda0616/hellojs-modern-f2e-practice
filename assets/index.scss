@@ -1,23 +1,29 @@
+@import "./variables.scss";
+@import "./mixin.scss";
+$white-bg: #eee;
+$base-font: 16px;
 .box{
-  background-color: #EEE;
+  @include xs {
+    font-size: 50px;
+  }
+  background-color: $white-bg;
   height: 50px;
   margin: 5px 0px;
   padding: 10px;
   text-align: center;
-  border: 1px solid blue;
   border-radius: 10px;
-
-  text-align: center;
 }
 
-h3 {
-  color: blue;
+.box {
+  & > h3 {
+    color: $blue;
+  }
 }
 
 input[type="text"] {
   width: 100%;
-  font-size: 15px * 4;
+  font-size: $base-font * 2;
   color: green;
-  border: 1px solid blue;
+  border: 1px solid $blue;;
   border-radius: 10px;
 }
